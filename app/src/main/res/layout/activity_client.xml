@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ClientActivity">
+
+    <TextView
+        android:id="@+id/txvClientID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:textSize="20dp"
+        android:text="Log:\n" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStartDiscoveryID"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="startDiscovery"
+            android:text="Start Discovery" />
+
+        <Button
+            android:id="@+id/btnStopDiscoveryID"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="stopDiscovery"
+            android:text="Stop Discovery" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDisconnectClientID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="disconnectFromMaster"
+        android:text="Disconnect" />
+
+    <ListView
+        android:id="@+id/listViewClientID"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginBottom="8dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextClientID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="msg" />
+
+        <Button
+            android:id="@+id/btnSendClientID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="send" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MasterActivity">
+
+    <TextView
+        android:id="@+id/txvMasterID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:text="Log:\n"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStartAdversitingID"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="startAdvertising"
+            android:text="start Adversiting" />
+
+        <Button
+            android:id="@+id/btnStopAdversiteID"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="stopAdversiting"
+            android:text="Stop Adversiting" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDisconnectMasterID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="disconnect"
+        android:text="disconnect" />
+
+    <ListView
+        android:id="@+id/masterListViewID"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextMasterID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="msg" />
+
+        <Button
+            android:id="@+id/btnSendMasterID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="send" />
+    </LinearLayout>
+
+</LinearLayout>
